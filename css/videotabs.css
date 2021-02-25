@@ -12,6 +12,31 @@
         align-items: center;  */
     }
 
+.nav-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nav.nav-tabs {
+    -webkit-overflow-scrolling: touch; /* apply iOS momentum scrolling effect to this element */
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+
+    /* Hide scrollbar for IE, Edge add Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .nav.nav-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav.nav-tabs li {
+        display: inline-block
+    }
+
 .nav-tabs {
     border: none !important;
 
@@ -21,12 +46,8 @@
 }
 
 ul#VideosBlog {
-    /*
-    margin: 0px 0 69px 0;
-    padding: 0px;
-    display: flex;
-    
-    */
+    list-style: none;
+    padding: 0
 }
 
 ul#VideosBlog li {
